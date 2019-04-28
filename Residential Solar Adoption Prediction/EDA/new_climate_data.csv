@@ -1,0 +1,3 @@
+fips,latitude,longitude,daily_solar_radiation,atmospheric_pressure,wind_speed,frost_days,relative_humidity,heating_degree_days,cooling_degree_days,earth_temperature_amplitude,air_temperature,earth_temperature
+3.71513736264,97.7031267092,4.78637192343,492.0,75.661349134,13332.32,900.66,7.00230769231,14.3501766304,14.3574723757
+3.71513736264,97.3928532361,4.86537830447,506.0,75.5134731085,13918.16,806.14,6.85,14.2196657382,14.3505681818

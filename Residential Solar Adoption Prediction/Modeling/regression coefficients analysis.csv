@@ -1,0 +1,104 @@
+,,,,,,,
+Covariance Type:,nonrobust,,,,,,
+,,,,,,,
+,coef,std err,t,P>|t|,[0.025,0.975],Intepretation
+average_household_income,1.46E-07,1.16E-08,12.618,0,1.24E-07,1.69E-07,"the regression coefficients are positive. installing a solar panel is expensive, even after tax credits.  The average solar panel system costs $12,810 to install after taxes: https://news.energysage.com/how-much-does-the-average-solar-panel-installation-cost-in-the-u-s/.  Thus, wealthier people are better positioned to cover the upfront costs, and these features either measure or are correlated with the wealth of a particular district"
+population_density,-2.08E-07,2.02E-08,-10.314,0,-2.47E-07,-1.68E-07,"Population density: regression coefficient is negative.  some research suggests that population density is actually inversely correlated with solar PV installated per capita: https://static1.squarespace.com/static/56b25eb9cf80a1861cb737c8/t/5994aaa6e58c62554404bf62/1502915238902/Urban+U.S.+Per+Capita+PV+Usage+-+Population+Density+4-27-17.docx.  The paper suggests that a lack of developable roof space contribues to this under-utilization, and that buildings in cities often absorb most of their sunlight on their facades rather than their rooftops"
+education_less_than_high_school_rate,2.36E+04,5.69E+04,0.416,0.678,-8.78E+04,1.35E+05,
+education_high_school_graduate_rate,5266.6126,1.27E+04,0.415,0.678,-1.96E+04,3.01E+04,
+education_college_rate,-3918.0906,9400.698,-0.417,0.677,-2.23E+04,1.45E+04,
+education_bachelor_rate,-1.31E+04,3.15E+04,-0.416,0.677,-7.48E+04,4.86E+04,
+education_master_rate,-2.23E+04,5.36E+04,-0.416,0.677,-1.27E+05,8.27E+04,
+education_professional_school_rate,-3.61E+04,8.67E+04,-0.416,0.677,-2.06E+05,1.34E+05,
+education_doctoral_rate,-3.61E+04,8.67E+04,-0.416,0.677,-2.06E+05,1.34E+05,
+race_white_rate,-6.04E+04,1.45E+05,-0.416,0.678,-3.45E+05,2.24E+05,
+race_black_africa_rate,-6.04E+04,1.45E+05,-0.416,0.678,-3.45E+05,2.24E+05,
+race_indian_alaska_rate,-6.04E+04,1.45E+05,-0.416,0.678,-3.45E+05,2.24E+05,
+race_asian_rate,-6.04E+04,1.45E+05,-0.416,0.678,-3.45E+05,2.24E+05,
+race_islander_rate,-6.04E+04,1.45E+05,-0.416,0.678,-3.45E+05,2.24E+05,
+race_other_rate,-6.04E+04,1.45E+05,-0.416,0.678,-3.45E+05,2.24E+05,
+race_two_more_rate,-6.04E+04,1.45E+05,-0.416,0.678,-3.45E+05,2.24E+05,
+employ_rate,0.0129,0.004,3.481,0,0.006,0.02,"regression coefficient is positive, even when accounting for income"
+poverty_family_below_poverty_level_rate,0.0119,0.003,4.563,0,0.007,0.017,regression coefficient is positive.  No intuitive explanation of why this would be the case
+heating_fuel_gas_rate,36.7642,82.648,0.445,0.656,-125.225,198.753,
+heating_fuel_electricity_rate,36.7606,82.648,0.445,0.656,-125.228,198.749,
+heating_fuel_fuel_oil_kerosene_rate,36.7652,82.648,0.445,0.656,-125.224,198.754,
+heating_fuel_coal_coke_rate,36.74,82.648,0.445,0.657,-125.249,198.729,
+heating_fuel_solar_rate,37.4201,82.648,0.453,0.651,-124.569,199.409,
+heating_fuel_other_rate,36.705,82.647,0.444,0.657,-125.283,198.693,
+heating_fuel_none_rate,36.6234,82.648,0.443,0.658,-125.366,198.613,
+average_household_size,0.0145,0.001,19.986,0,0.013,0.016,"the regression coefficient is probably positive for the same reason that the regression coefficient is negative for population density (see url above).  It could also be that larger houses are more expensive to heat with solar, making solar panels less viable"
+housing_unit_median_value,-4.28E-09,1.69E-09,-2.534,0.011,-7.58E-09,-9.69E-10,
+housing_unit_median_gross_rent,5.33E-06,5.81E-07,9.178,0,4.19E-06,6.47E-06,"the regression coefficients are positive. installing a solar panel is expensive, even after tax credits.  The average solar panel system costs $12,810 to install after taxes: https://news.energysage.com/how-much-does-the-average-solar-panel-installation-cost-in-the-u-s/.  Thus, wealthier people are better positioned to cover the upfront costs, and these features either measure or are correlated with the wealth of a particular district"
+elevation,2.52E-06,1.42E-05,0.177,0.86,-2.54E-05,3.04E-05,
+earth_temperature_amplitude,0.0003,0,2.438,0.015,5.38E-05,0,
+frost_days,-0.0002,2.44E-05,-8.615,0,0,0,regression coefficient is negative.  It could be that areas with intense winters can't currently meet their energy demands with renewable energy sources: https://www.forbes.com/sites/christopherhelman/2014/04/24/solar-is-booming-but-will-never-replace-coal/#4d78f6176ebb
+air_temperature,-0.019,0.001,-17.368,0,-0.021,-0.017,no intuitive explanation for why air temperature coefficient would be negative
+relative_humidity,-0.0148,0.007,-2.214,0.027,-0.028,-0.002,"regression coefficient is negative.  some research suggests that solar radiation is inversely correlated with relative humidity: chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.ijsrp.org/research-paper-0217/ijsrp-p6246.pdf.  However, it's interesting that this coefficient is still negative even when including solar radiation in the model"
+daily_solar_radiation,0.0068,0.001,5.566,0,0.004,0.009,"regression coefficient is positive.  the amount of solar energy that your system generates depends, among other things, on the number of sunshine hours you get per day and the intensity of the radiation: https://www.solar-estimate.org/solar-panels-101/how-much-do-solar-panels-produce.  Thus, solar panels are more economical in sunnier areas."
+atmospheric_pressure,0.0002,0.001,0.167,0.867,-0.002,0.003,
+wind_speed,-0.0006,0,-1.659,0.097,-0.001,0,
+earth_temperature,0.006,0.001,11.367,0,0.005,0.007,it's  odd that the earth temperature coefficient is positive but the air temperature coefficient is negative
+heating_degree_days,-2.67E-05,2.26E-06,-11.806,0,-3.11E-05,-2.23E-05,interesting that this is significant even after accounting for temperature and froest days
+cooling_degree_days,2.15E-05,2.11E-06,10.175,0,1.74E-05,2.57E-05,interesting that this is still significant and positive even after accounting for temperature
+age_18_24_rate,0.1045,0.007,14.341,0,0.09,0.119,the age variables probably aren't significant predictors of solar energy adoption
+age_25_34_rate,0.127,0.008,15.332,0,0.111,0.143,the age variables probably aren't significant predictors of solar energy adoption
+age_more_than_85_rate,0.4413,0.013,33.928,0,0.416,0.467,the age variables probably aren't significant predictors of solar energy adoption
+age_75_84_rate,0.0019,0.012,0.152,0.879,-0.022,0.026,
+age_35_44_rate,0.1092,0.009,11.688,0,0.091,0.127,the age variables probably aren't significant predictors of solar energy adoption
+age_45_54_rate,0.09,0.009,9.534,0,0.072,0.109,the age variables probably aren't significant predictors of solar energy adoption
+age_65_74_rate,0.1098,0.011,10.298,0,0.089,0.131,the age variables probably aren't significant predictors of solar energy adoption
+age_55_64_rate,0.0712,0.01,7.191,0,0.052,0.091,the age variables probably aren't significant predictors of solar energy adoption
+age_10_14_rate,0.0172,0.01,1.739,0.082,-0.002,0.037,
+age_15_17_rate,0.0142,0.012,1.209,0.227,-0.009,0.037,
+age_5_9_rate,0.0294,0.011,2.67,0.008,0.008,0.051,
+household_type_family_rate,-0.0014,0.002,-0.587,0.557,-0.006,0.003,
+dropout_16_19_inschool_rate,-0.0049,0.002,-2.83,0.005,-0.008,-0.002,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_construction_rate,0.0303,0.007,4.478,0,0.017,0.043,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_public_rate,0.0137,0.006,2.119,0.034,0.001,0.026,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_information_rate,-0.0539,0.01,-5.531,0,-0.073,-0.035,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_finance_rate,-0.0123,0.007,-1.827,0.068,-0.025,0.001,
+occupation_education_rate,0.0022,0.006,0.395,0.693,-0.009,0.013,
+occupation_administrative_rate,0.004,0.006,0.636,0.525,-0.008,0.016,
+occupation_manufacturing_rate,0.0271,0.006,4.779,0,0.016,0.038,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_wholesale_rate,-0.0254,0.009,-2.837,0.005,-0.043,-0.008,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_retail_rate,0.0003,0.006,0.052,0.958,-0.012,0.012,
+occupation_transportation_rate,-0.0224,0.007,-3.196,0.001,-0.036,-0.009,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_arts_rate,0.0152,0.006,2.578,0.01,0.004,0.027,interesting that this is still significant and positive even after accounting for income and years of edcation
+occupation_agriculture_rate,0.0046,0.006,0.728,0.467,-0.008,0.017,
+occupancy_vacant_rate,0.0119,0.002,5.705,0,0.008,0.016,further research needed into why this coeffificient is positive
+occupancy_owner_rate,0.0099,0.002,6.216,0,0.007,0.013,further research needed into why this coeffificient is positive
+mortgage_with_rate,0.0134,0.001,9.621,0,0.011,0.016,further research needed into why this coeffificient is positive
+transportation_home_rate,-0.0067,0.01,-0.652,0.514,-0.027,0.014,
+transportation_car_alone_rate,-0.0579,0.009,-6.273,0,-0.076,-0.04,further research needed into why this coeffificient is positive
+transportation_walk_rate,-0.0284,0.01,-2.86,0.004,-0.048,-0.009,"coefficient could be negative because cities have low solar energy adoption, and also a high rate of people transporting by walking"
+transportation_carpool_rate,-0.0533,0.01,-5.575,0,-0.072,-0.035,further research needed into why this coeffificient is positive
+transportation_motorcycle_rate,-0.0156,0.03,-0.52,0.603,-0.075,0.043,
+transportation_bicycle_rate,-0.0916,0.013,-6.884,0,-0.118,-0.066,"coefficient could be negative because cities have low solar energy adoption, and also a high rate of people transporting by bicycling"
+transportation_public_rate,-0.0452,0.009,-4.814,0,-0.064,-0.027,"coefficient could be negative because cities have low solar energy adoption, and also a high rate of people transporting by taking public transportation"
+travel_time_less_than_10_rate,0.0226,0.014,1.625,0.104,-0.005,0.05,
+travel_time_10_19_rate,0.0096,0.013,0.743,0.458,-0.016,0.035,
+travel_time_20_29_rate,0.0112,0.012,0.932,0.351,-0.012,0.035,
+travel_time_30_39_rate,-0.003,0.011,-0.264,0.792,-0.025,0.019,
+travel_time_40_59_rate,-0.0097,0.01,-0.988,0.323,-0.029,0.01,
+travel_time_60_89_rate,-0.0341,0.009,-3.643,0,-0.052,-0.016,more investigation needed to determine why this might be significant
+health_insurance_public_rate,0.0118,0.003,4.21,0,0.006,0.017,more investigation needed to determine why this might be significant
+health_insurance_none_rate,-0.0388,0.003,-11.779,0,-0.045,-0.032,more investigation needed to determine why this might be significant
+age_median,-0.0001,7.71E-05,-1.766,0.077,0,1.49E-05,
+travel_time_average,0.0005,0,4.23,0,0,0.001,more investigation needed to determine why this might be significant
+voting_2016_dem_percentage,-0.01,0.009,-1.15,0.25,-0.027,0.007,
+voting_2016_gop_percentage,-0.0155,0.009,-1.761,0.078,-0.033,0.002,
+number_of_years_of_education,4592.359,1.10E+04,0.416,0.678,-1.71E+04,2.62E+04,
+diversity,0.0015,0.001,1.14,0.254,-0.001,0.004,
+net_metering,2.14E-05,2.44E-05,0.877,0.38,-2.65E-05,6.93E-05,
+feedin_tariff,0.0006,9.59E-05,6.074,0,0,0.001,"intuitive that this would be significant, because it's a solar energy incentive"
+cooperate_tax,-0.0004,8.08E-05,-5.095,0,-0.001,0,"intuitive that this would be significant, because it's a solar energy incentive"
+property_tax,-5.24E-05,1.22E-05,-4.292,0,-7.63E-05,-2.85E-05,"intuitive that this would be significant, because it's a solar energy incentive"
+sales_tax,7.86E-05,2.30E-05,3.412,0.001,3.35E-05,0,"intuitive that this would be significant, because it's a solar energy incentive"
+rebate,9.24E-05,7.11E-05,1.298,0.194,-4.71E-05,0,
+avg_electricity_retail_rate,0.0013,0,8.945,0,0.001,0.002,
+,,,,,,,
+Omnibus:,226665.011,Durbin-Watson:,1.784,,,,
+Prob(Omnibus):,0,Jarque-Bera (JB):,65480523421,,,,
+Skew:,50.293,Prob(JB):,0,,,,
+Kurtosis:,4681.45,Cond. No.,1.35E+15,,,,
